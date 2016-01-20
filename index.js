@@ -12,6 +12,6 @@ var ValidModel = module.exports = Model.extend({
             attributes[name] = val;
             options = {};
         }
-        return ValidModel.__super__.set.call(this, attributes, Object.assign({validate: true}, options));
+        return ValidModel.__super__.set.call(this, attributes, assign({validate: true}, options));
     }
 });
